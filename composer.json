@@ -1,0 +1,14 @@
+{
+    "name": "hut6/mailout",
+    "require": {
+        "swiftmailer/swiftmailer": "~5.3",
+        "twig/twig": "~1.18",
+        "html2text/html2text": "~2.0"
+    },
+    "authors": [
+        {
+            "name": "Johan Douma",
+            "email": "johandouma@gmail.com"
+        }
+    ]
+}
