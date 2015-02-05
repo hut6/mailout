@@ -6,7 +6,7 @@ include("vendor/autoload.php");
 
 // Swiftmailer
 $transporter = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
-    ->setUsername("@dwd.com.au")
+    ->setUsername("")
     ->setPassword("");
 $mailer = Swift_Mailer::newInstance($transporter);
 
@@ -34,7 +34,7 @@ foreach($contacts as $contact) {
     
     // Message
     $message = Swift_Message::newInstance()
-        ->setSubject('Improvements and changes to your services')
+        ->setSubject('Some Subject')
         ->setFrom(array('support@dwd.com.au' => 'DriverWeb'))
         ->setTo(array($contact['email'] => $contact['firstname'].' '.$contact['lastname']))
         ->setBody($htmlEmail, 'text/html')
